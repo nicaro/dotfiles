@@ -1,0 +1,7 @@
+# Developer tools (packages)
+git
+tmux
+
+# Config
+setup ssh key
+$ ssh-keygen -t rsa -b 4096 -C "nicolasarogvi@gmail.com"
