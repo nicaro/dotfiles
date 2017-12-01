@@ -1,7 +1,35 @@
 # Developer tools (packages)
-git
-tmux
+$ sudo apt-get install git
+$ sudo apt-get install tmux
+$ sudo apt-get install haskell-platform
 
 # Config
-setup ssh key
+
+## Setup ssh key
 $ ssh-keygen -t rsa -b 4096 -C "nicolasarogvi@gmail.com"
+
+# Docker install
+$ sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
+
+$ sudo apt-key fingerprint 0EBFCD88
+
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+($ lsb_release -> the name of your Ubuntu distribution. For Mint maybe use parent Ubuntu name. In this case use "xenial")
+
+$ sudo apt-get update
+
+$ sudo apt-get install docker-ce
