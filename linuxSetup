@@ -1,12 +1,27 @@
 # Developer tools (packages)
-$ sudo apt-get install git
-$ sudo apt-get install tmux
-$ sudo apt-get install haskell-platform
+$ sudo apt-get install
+    git
+    tmux
+    haskell-platform
+
+    nodejs
+    npm
+    nodejs-legacy
+
+    virtualbox
+    vagrant
+    virtualbox-dkms
+
+$ npm install -g elm
 
 # Config
 
 ## Setup ssh key
 $ ssh-keygen -t rsa -b 4096 -C "nicolasarogvi@gmail.com"
+
+## Vim
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Docker install
 $ sudo apt-get update
