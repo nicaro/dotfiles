@@ -12,6 +12,9 @@ $ sudo apt-get install
     vagrant
     virtualbox-dkms
 
+    openjdk-6-jdk
+    gradle
+
 $ npm install -g elm
 
 # Config
